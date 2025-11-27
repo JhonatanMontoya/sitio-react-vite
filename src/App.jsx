@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import foto1 from "./assets/foto1.jpg";
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
         </div>
 
         <div className="hero-right">
-          <img src="/foto1.jpeg" alt="Presentación" />
+          <img src={foto1} alt="Presentación" />
         </div>
       </section>
 
