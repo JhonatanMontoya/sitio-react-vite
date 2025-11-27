@@ -1,0 +1,91 @@
+/* Reset básico */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Inter, Arial, sans-serif; background:#f4f6f8; color:#111; }
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 100px;
+  background: #ffffff;
+}
+
+/* IZQUIERDA (texto) */
+.hero-left {
+  width: 50%;
+}
+.hero-left h1 {
+  font-size: 44px;
+  margin-bottom: 18px;
+  line-height: 1.05;
+}
+.hero-left p {
+  font-size: 18px;
+  margin-bottom: 22px;
+  color: #444;
+}
+.btn-contact {
+  display:inline-block;
+  padding: 12px 24px;
+  background: #0b63d6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* DERECHA (imagen) */
+.hero-right {
+  width: 40%;
+  display:flex;
+  justify-content:center;
+}
+.hero-right img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 30px rgba(12,20,40,0.08);
+}
+
+/* FORMULARIO */
+.form-section {
+  padding: 60px 100px;
+  background: #f5f7fa;
+}
+.form-section h2 { margin-bottom: 18px; font-size: 28px; }
+.formulario {
+  margin-top: 12px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  width:460px;
+}
+.formulario input, .formulario textarea {
+  padding:12px;
+  font-size:16px;
+  border:1px solid #d6dbe0;
+  border-radius:8px;
+  background:#fff;
+  resize:vertical;
+}
+.formulario button {
+  padding:12px;
+  background:#17a34a;
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+
+@media (max-width: 1000px) {
+
+  .hero { flex-direction: column; padding: 40px; }
+  .hero-left, .hero-right { width: 100%; }
+  .formulario { width:100%; }
+}
